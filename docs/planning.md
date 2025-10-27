@@ -9,10 +9,11 @@ Trying to find parking in Bristol is very difficult as there isn't enough reliab
 TODO: List high-level benefits that this product will provide.
 
 ### Options Considered
-Google Map
+Google Map - what can do
+other options
 
 ### Expected Risks
-TODO: What are the main risks of this project?
+Risks are car park can be closed or prices can be changed. It may not be updated in real time quick enough if there are current issues like if there are no spaces, emergany repairs/closures and weather issues.
 
 ## Project Scope
 TODO: Scope of the System of Interest. Include a bullet list of things from your context diagram that are in scope.
