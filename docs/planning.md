@@ -17,4 +17,5 @@ TODO: What are the main risks of this project?
 ## Project Scope
 TODO: Scope of the System of Interest. Include a bullet list of things from your context diagram that are in scope.
 
-![Context Diagram](contextDiagram.png)
+![Context Diagram](contextDiagram)
+ ![WhatsApp Image 2025-10-20 at 11 26 32 AM](https://github.com/user-attachments/assets/cdef47f4-3f02-4d72-a85e-0ec4da4554a9)
