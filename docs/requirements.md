@@ -4,6 +4,7 @@
 
 ### User stories
 TODO: Write brief user stories to explain how various actors would interact with the system to accomplish a goal.
+
 As a driver I want to know where my nearest car park that is open so when I leave my house I am able to park my car.
 As a driver I want to know where my nearest car park that is free so when I leave my house I am able to park my car without needing to pay.
 As a driver I want to know where my nearest car park that has enough space so when I leave my house I am able to find space to park my car.
