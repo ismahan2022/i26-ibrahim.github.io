@@ -4,7 +4,9 @@
 
 ### User stories
 TODO: Write brief user stories to explain how various actors would interact with the system to accomplish a goal.
-    Express these in the form from agile development:- As a (role) I want (goal) so that (benefit).
+As a driver I want to know where my nearest car park that is open so when I leave my house I am able to park my car.
+As a driver I want to know where my nearest car park that is free so when I leave my house I am able to park my car without needing to pay.
+As a driver I want to know where my nearest car park that has enough space so when I leave my house I am able to find space to park my car.
 
 ### Actors
 TODO: List and describe the actors/users for this product.
