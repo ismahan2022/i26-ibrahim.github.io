@@ -33,7 +33,7 @@ The app includes paid features for advanced functionality which may limit access
 ### Expected Risks
 There are a few potential risks associated with this project. 
 The main challenge is that the data from the Bristol Open Data portal is not updated in real time meaning information about car park availability, closures or pricing may sometimes be out of date.
-Although the app will allow users to submit live updates this approach relies on active participation and inaccurate or misleading information could occasionally be reported. 
+Although the app will allow users to submit live updates this approach relies on active participation and inaccurate or misleading information can cause problems. 
 Technical issues such as delays in updating data or errors when combining user input with official data may also occur. 
 Additionally, external factors such as unexpected car park closures, maintenance work, weather conditions or changes in pricing could affect the accuracy of the information displayed. 
 Ensuring user trust and maintaining data reliability will therefore be key challenges.
