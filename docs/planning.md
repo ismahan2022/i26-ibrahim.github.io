@@ -18,5 +18,6 @@ Risks are car park can be closed or prices can be changed. It may not be updated
 ## Project Scope
 TODO: Scope of the System of Interest. Include a bullet list of things from your context diagram that are in scope.
 
-![Context Diagram](https://github.com/ismahan2022/i26-ibrahim.github.io/blob/89307221d7996d9238b824074359ec2173112bdd/contextDiagram.png)
+![Context Diagram](<img width="490" height="392" alt="image" src="https://github.com/user-attachments/assets/ac925ea8-74df-48fe-a0a0-21336ce0d248" />
+)
 
