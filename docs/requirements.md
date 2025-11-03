@@ -30,7 +30,8 @@ TODO: Describe each use case (at least one per team member).
 
 TODO: Your Use-Case diagram should include all use-cases.
 
-![Insert your Use-Case Diagram Here](images/use-case.png)
+![Insert your Use-Case Diagram Here](<img width="431" height="308" alt="Car Park - Usecase Modelling" src="https://github.com/user-attachments/assets/73015049-e8f6-41d2-9ea9-77acfa031259" />
+)
 
 ## Software Requirements Specification
 ### Functional requirements
