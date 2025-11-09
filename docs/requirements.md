@@ -2,6 +2,7 @@
 
 ## User Needs
 
+
 ### User stories
 TODO: Write brief user stories to explain how various actors would interact with the system to accomplish a goal.
 
@@ -21,8 +22,7 @@ TODO: Describe each use case (at least one per team member).
 
 | TODO: USE-CASE ID e.g. UC1, UC2, ... | TODO: USE-CASE NAME | 
 | -------------------------------------- | ------------------- |
-| **Description** | TODO: Goal to be achieved by use case and sources for requirement 
-(As a driver, I need access to available and secure parking spaces to ensure convenient and safe vehicle storage.|
+| **Description** | TODO: Goal to be achieved by use case and sources for requirement (As a driver, I need access to available and secure parking spaces to ensure convenient and safe vehicle storage.|
 | **Actors** | TODO: List of actors involved in use case (Driver)|
 | **Assumptions** | The driver has a stable internet connection to access the car park system. TODO: Pre/post-conditions if any</td></tr>
 | **Steps** | Open the car park app/ Search for nearby parking/ Choose location/ View available spaces/ Make payment TODO: Interactions between actors and system necessary to achieve goal |
