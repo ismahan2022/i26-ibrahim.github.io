@@ -46,9 +46,13 @@ TODO: create a list of functional requirements.
     e.g. "The system shall ..."
     Give each functional requirement a unique ID. e.g. FR1, FR2, ...
     Indicate which UC the requirement comes from.
+    
 The system must request permission to access space availability.
+
 The system should include a login step before allowing users to search car park pricing.
+
 The system must display car park operating hours retrieved from Bristol Open Data.
+
 The system should include safety facility information for each car park location. 
 
 ### Non-Functional Requirements
