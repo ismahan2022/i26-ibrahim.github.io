@@ -12,6 +12,8 @@ As a driver I want to know where my nearest car park that has enough space so wh
 ### Actors
 TODO: List and describe the actors/users for this product.
 
+The car park system is designed to support two primary actors: drivers, who utilize the service to locate and access parking, and administrators, who oversee system operations and maintain facility-related data.
+
 ### Use Cases
 TODO: Describe each use case (at least one per team member).
     Give each use case a unique ID, e.g. UC1, UC2, ...
