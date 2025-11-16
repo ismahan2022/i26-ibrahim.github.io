@@ -42,7 +42,7 @@ The car park system is designed to support two primary actors: drivers, who util
 
 | UC3 | USE-CASE 3 | 
 | -------------------------------------- | ------------------- |
-| **Description** | The driver searches for avaiable parking.|
+| **Description** | The driver searches for available parking.|
 | **Actors** | Driver, Applicant, Browser and Operator.|
 | **Assumptions** | The user has an active internet connection and the parking dataset contains up-to-date information. The system can retrieve pricing, safety facility details and operating hours. |
 | **Steps** |  The user opens the app or website. The user selects the option to “Find Available Parking”. The system retrieves parking locations and availability data. The system displays safety facility information if relevant and also shows pricing information and only shows operating hours if necessary. The user views the results and selects a car park if desired.|
@@ -69,7 +69,7 @@ TODO: Your Use-Case diagram should include all use-cases.
 
 <img width="542" height="338" alt="UC - 3" src="https://github.com/user-attachments/assets/b5eea73e-028a-4251-9d2b-e218425c2aee" />
 
-<img width="542" height="338" alt="UC4" src="UC4.png" />
+!(UC4.png) 
 ## Software Requirements Specification
 ### Functional requirements
 TODO: create a list of functional requirements. 
