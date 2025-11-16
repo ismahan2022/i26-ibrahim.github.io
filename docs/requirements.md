@@ -57,7 +57,7 @@ The car park system is designed to support two primary actors: drivers, who util
 | **Assumptions** | The driver has a stable internet connection and there is an existing car park selected to attach the update to. |
 | **Steps** |  The driver opens the app. The driver selects 'Submit Update'. The driver selects the car park. The user enters details such as spaces, closure, price changes or issues. The system validates the information format. The update is submitted and stored. The update becomes visible to other drivers or flagged for operator review. |
 | **Variations** | The update may require approval before appearing publicly. If the user provides incomplete information then the app prompts them to add missing details. |
-| **Non-functional** | Updates must appear as quick as possiable. The system must prevent spam or repeated duplicate updates. |
+| **Non-functional** | Updates must appear as quick as possible. The system must prevent spam or repeated duplicate updates. |
 | **Issues** | Some updates may be inaccurate or intentionally misleading. Operators may not verify updates immediately. Need for a trust or reputation system to reduce false reports. |
 
 TODO: Your Use-Case diagram should include all use-cases.
@@ -69,7 +69,7 @@ TODO: Your Use-Case diagram should include all use-cases.
 
 <img width="542" height="338" alt="UC - 3" src="https://github.com/user-attachments/assets/b5eea73e-028a-4251-9d2b-e218425c2aee" />
 
-
+<img width="542" height="338" alt="UC4" src="UC4.png" />
 ## Software Requirements Specification
 ### Functional requirements
 TODO: create a list of functional requirements. 
