@@ -35,7 +35,10 @@ TODO: Your Use-Case diagram should include all use-cases.
 
 # Use-Case diagram 
 
-(<img width="428" height="319" alt="Use case final" src="https://github.com/user-attachments/assets/fd210b38-e5c8-41dc-8b8b-f944596c115f" />
+(<img <img width="436" height="321" alt="UC - 1" src="https://github.com/user-attachments/assets/51b29cd5-2295-4190-bb51-d9e6d05052e8" <img width="422" height="333" alt="UC - 2" src="https://github.com/user-attachments/assets/019c88f5-1f14-4ce7-af72-dd26610a5aaa" <img width="542" height="338" alt="UC - 3" src="https://github.com/user-attachments/assets/b5eea73e-028a-4251-9d2b-e218425c2aee" />
+ />
+/>
+ />
  />
 >
 
@@ -48,16 +51,18 @@ TODO: create a list of functional requirements.
     Give each functional requirement a unique ID. e.g. FR1, FR2, ...
     Indicate which UC the requirement comes from.
     
-FR1- The system must request permission to access space availability.
 
-FR2- The system should include a login step before allowing users to search car park pricing.
+FR1- The system should include a login step before allowing users to search car park pricing.
 
-FR3- The system must display car park operating hours retrieved from Bristol Open Data.
+FR2- The system must display car park operating hours retrieved from Bristol Open Data.
 
-FR4- The system should include safety facility information for each car park location. 
+FR3- The system should include safety facility information for each car park location. 
 
 ### Non-Functional Requirements
 TODO: Consider one or more [quality attributes](https://en.wikipedia.org/wiki/ISO/IEC_9126) to suggest a small number of non-functional requirements.
 Give each non-functional requirement a unique ID. e.g. NFR1, NFR2, ...
 
 Indicate which UC the requirement comes from.
+NFR1 - The Car Park App shall update the number of available car spaces within 5 seconds of any actual change, ensuring driver receive accurate, up-to-date information about space availability across all car park locations.
+NFR2- Every car park location shall be equipped with security systems that are monitored and maintained regularly to ensure 24/7 protection of parked vehicles against damage and theft. 
+NFR3 - The Car Park App shall provide immediate feedback within 1 second upon any user interaction, such as tapping a button, to confirm that the system is responding. 
