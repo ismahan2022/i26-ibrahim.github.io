@@ -56,17 +56,20 @@ TODO: create a list of functional requirements.
     Indicate which UC the requirement comes from.
     
 
-FR1- The system should include a login step before allowing users to search car park pricing.
+FR1- The system should include a login step before allowing users to search car park pricing. UC2
 
-FR2- The system must display car park operating hours retrieved from Bristol Open Data.
+FR2- The system must display car park operating hours retrieved from Bristol Open Data. UC2
 
-FR3- The system should include safety facility information for each car park location. 
+FR3- The system should include safety facility information for each car park location. UC2
 
 ### Non-Functional Requirements
 TODO: Consider one or more [quality attributes](https://en.wikipedia.org/wiki/ISO/IEC_9126) to suggest a small number of non-functional requirements.
 Give each non-functional requirement a unique ID. e.g. NFR1, NFR2, ...
 
 Indicate which UC the requirement comes from.
-NFR1 - The Car Park App shall update the number of available car spaces within 5 seconds of any actual change, ensuring driver receive accurate, up-to-date information about space availability across all car park locations.
-NFR2- Every car park location shall be equipped with security systems that are monitored and maintained regularly to ensure 24/7 protection of parked vehicles against damage and theft. 
-NFR3 - The Car Park App shall provide immediate feedback within 1 second upon any user interaction, such as tapping a button, to confirm that the system is responding. 
+
+NFR1 - The Car Park App shall update the number of available car spaces within 5 seconds of any actual change, ensuring driver receive accurate, up-to-date information about space availability across all car park locations. UC2
+
+NFR2- Every car park location shall be equipped with security systems that are monitored and maintained regularly to ensure 24/7 protection of parked vehicles against damage and theft. UC2
+
+NFR3 - The Car Park App shall provide immediate feedback within 1 second upon any user interaction, such as tapping a button, to confirm that the system is responding. UC2
