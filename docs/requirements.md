@@ -35,7 +35,11 @@ TODO: Your Use-Case diagram should include all use-cases.
 
 # Use-Case diagram 
 
-(<img <img width="436" height="321" alt="UC - 1" src="https://github.com/user-attachments/assets/51b29cd5-2295-4190-bb51-d9e6d05052e8" <img width="422" height="333" alt="UC - 2" src="https://github.com/user-attachments/assets/019c88f5-1f14-4ce7-af72-dd26610a5aaa" <img width="542" height="338" alt="UC - 3" src="https://github.com/user-attachments/assets/b5eea73e-028a-4251-9d2b-e218425c2aee" />
+(<img width="436" height="321" alt="UC - 1" src="https://github.com/user-attachments/assets/8b2ed0da-0a2b-4a48-9ad9-b5ec0040f27f" />
+(<img width="422" height="333" alt="UC - 2" src="https://github.com/user-attachments/assets/577503fe-78f1-44c3-9810-7be215deaff9" />
+
+( <img width="542" height="338" alt="UC - 3" src="https://github.com/user-attachments/assets/b5eea73e-028a-4251-9d2b-e218425c2aee" />
+
  />
 />
  />
