@@ -31,6 +31,18 @@ TODO: Describe each use case (at least one per team member).
 | **Issues** | (Internet stability and real-time data accuracy) TODO: OPTIONAL - List of issues that remain to be resolved |
 
 
+
+| UC2 | USE-CASE 2 | 
+| -------------------------------------- | ------------------- |
+| **Description** | The driver searches for suitable parking in the area they searched for.|
+| **Actors** | Driver, Software Developer and Operator.|
+| **Assumptions** | The driver has a stable internet connection and knows their location or has access to location services. |
+| **Steps** |  The driver opens the app. The driver selects 'Search Location'. The system retrieves car parks in the selected or detected location. The system displays a list of available car parks and information about the car parks like operating hours and pricing. The driver than makes payments if needed with operator. |
+| **Variations** | If no car parks are found then the system displays a “No parking locations nearby” message. The driver has poor internet connection then the system displays a " no internet connection" message. |
+| **Non-functional** | Search results must appear within 5 seconds. The map and list interface must be easy to navigate. |
+| **Issues** | Real- time data |
+
+
 TODO: Your Use-Case diagram should include all use-cases.
 
 # Use-Case diagram 
