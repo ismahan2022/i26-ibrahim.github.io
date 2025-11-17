@@ -78,7 +78,7 @@ TODO: create a list of functional requirements.
     Indicate which UC the requirement comes from.
     
 
-FR1- The system should include a login step before allowing users to search car park pricing. UC2
+FR1- The system should include a login step before allowing users to search car park information. UC2
 
 FR2- The system must display car park operating hours retrieved from Bristol Open Data. UC2
 
