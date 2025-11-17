@@ -78,11 +78,11 @@ TODO: create a list of functional requirements.
     Indicate which UC the requirement comes from.
     
 
-FR1- The system should include a login step before allowing users to search car park information. UC2
+FR1- The system shall require users to log in with valid username and passwords before accessing personal data or system features. UC2
 
-FR2- The system must display car park operating hours retrieved from Bristol Open Data. UC2
+FR2- The system shall display available car park information based on the driver's current location, prioritizing car parks nearest to the driver. UC2
 
-FR3- The system should include safety facility information for each car park location. UC2
+FR3- The system shall present detailed information on the safety facilities available at each car park location. UC2
 
 ### Non-Functional Requirements
 TODO: Consider one or more [quality attributes](https://en.wikipedia.org/wiki/ISO/IEC_9126) to suggest a small number of non-functional requirements.
