@@ -78,6 +78,7 @@ TODO: create a list of functional requirements.
     Indicate which UC the requirement comes from.
     
 
+
 FR1- The system shall require users to log in with valid username and passwords before accessing personal data or system features. UC2
 
 FR2- The system shall display available car park information based on the driver's current location, prioritizing car parks nearest to the driver. UC2
