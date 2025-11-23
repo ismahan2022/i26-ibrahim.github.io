@@ -50,7 +50,7 @@ TODO: Scope of the System of Interest. Include a bullet list of things from your
 - Complying with UK Government regulations for parking systems
 
 ## Context diagram
-<img width="490" height="392" alt="Car Park - Context Diagram " src="https://github.com/user-attachments/assets/8151b4cc-4a88-4ff9-b9e7-c642c06a59db" />
+<<img width="539" height="393" alt="image" src="https://github.com/user-attachments/assets/4f70af21-f3f9-46ed-9e54-3c668c02eed7" />
 
 
 
