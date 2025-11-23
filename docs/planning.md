@@ -8,7 +8,9 @@ The business case for a car park is to help feel more comfortable by using our a
 TODO: Replace the example text like this with text that describes your project. What is the problem to be addressed?
 
 Trying to find parking in Bristol is very difficult as there isn't enough reliable information available online about operating times, pricing and space availability. 
+
 This causes wasted time when trying to travel anywhere in Bristol. 
+
 To address this issue, our project will use data from Open Bristol to make an app where you can see key details such as prices, operating hours, space availability and other useful updates.
 
 ### Business benefits
@@ -32,10 +34,14 @@ The app includes paid features for advanced functionality which may limit access
 
 ### Expected Risks
 There are a few potential risks associated with this project. 
+
 The main challenge is that the data from the Bristol Open Data portal is not updated in real time meaning information about car park availability, closures or pricing may sometimes be out of date.
+
 Although the app will allow users to submit live updates this approach relies on active participation and inaccurate or misleading information can cause problems. 
+
 Technical issues such as delays in updating data or errors when combining user input with official data may also occur. 
 Additionally, external factors such as unexpected car park closures, maintenance work, weather conditions or changes in pricing could affect the accuracy of the information displayed. 
+
 Ensuring user trust and maintaining data reliability will therefore be key challenges.
 
 ## Project Scope
@@ -44,10 +50,8 @@ TODO: Scope of the System of Interest. Include a bullet list of things from your
 - Displaying car park infromation through user interface (Website)
 - Allowing drivers to search, view, and pay for parking
 - Receiving real-time updates from car park locations
-- Using offical data from Bristol City Council
 - Utilizing raw dataset from Open Data Bristol to access public parking data
-- Setting up a payment through external apps
-- Complying with UK Government regulations for parking systems
+- Setting up a payment through apps
 
 ## Context diagram
 <<img width="539" height="393" alt="image" src="https://github.com/user-attachments/assets/4f70af21-f3f9-46ed-9e54-3c668c02eed7" />
