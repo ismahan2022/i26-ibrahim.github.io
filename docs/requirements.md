@@ -34,7 +34,7 @@ The car park system is designed to support two primary actors: drivers, who util
 | **Description** | The driver searches for suitable parking in the area they searched for.|
 | **Actors** | Driver, Software Developer and Operator.|
 | **Assumptions** | The driver has a stable internet connection and knows their location or has access to location services. |
-| **Steps** |  The driver opens the app. The driver selects 'Search Location'. The system retrieves car parks in the selected or detected location. The system displays a list of available car parks and information about the car parks like operating hours and pricing. The driver than makes payments if needed with operator. |
+| **Steps** |  The driver opens the app. Browser loads the parking search interface. The driver selects 'Search Location'. Browser retrieves the driver's detected or manually entered location and sends it to the system. Operator ensures the car park data (pricing, availability and hours) is accurate and updated in the system. Browser receives the list of car parks from the system. The system displays a list of available car parks and information about the car parks like operating hours and pricing. The driver than makes payments if needed with operator. |
 | **Variations** | If no car parks are found then the system displays a “No parking locations nearby” message. The driver has poor internet connection then the system displays a " no internet connection" message. |
 | **Non-functional** | Search results must appear within 5 seconds. The map and list interface must be easy to navigate. |
 | **Issues** | Real- time data |
@@ -45,7 +45,7 @@ The car park system is designed to support two primary actors: drivers, who util
 | **Description** | The driver searches for available parking.|
 | **Actors** | Driver, Applicant, Browser and Operator.|
 | **Assumptions** | The user has an active internet connection and the parking dataset contains up-to-date information. The system can retrieve pricing, safety facility details and operating hours. |
-| **Steps** |  The user opens the app or website. The user selects the option to “Find Available Parking”. The system retrieves parking locations and availability data. The system displays safety facility information if relevant and also shows pricing information and only shows operating hours if necessary. The user views the results and selects a car park if desired.|
+| **Steps** |  The driver opens the app or website. Browser loads the homepage and displays the “Find Available Parking” option. The driver selects the option to “Find Available Parking”. The system retrieves parking locations and availability data. The system displays safety facility information if relevant and also shows pricing information and only shows operating hours if necessary. The driver views the results and selects a car park if desired.|
 | **Variations** | Operator can manually update availability or remove inaccurate entries. Operating hours may be excluded when not provided by the database.  |
 | **Non-functional** | Information must be clear and easy to understand. The system must handle high traffic without performance issues. |
 | **Issues** | Inconsistent data if operator updates are delayed. Missing information for some car parks (e.g., safety facilities). Availability may not reflect real-time occupancy. |
