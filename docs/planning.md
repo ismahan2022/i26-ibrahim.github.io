@@ -50,7 +50,7 @@ TODO: Scope of the System of Interest. Include a bullet list of things from your
 - Displaying car park infromation through user interface (Website)
 - Allowing drivers to search, view, and pay for parking
 - Receiving real-time updates from car park locations
-- Utilizing raw dataset from Open Data Bristol to access public parking data
+- Utilizing raw dataset from Open Data Bristol
 - Setting up a payment through apps
 
 ## Context diagram
