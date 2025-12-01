@@ -5,7 +5,7 @@
 The business case for a car park is to help feel more comfortable by using our app to search for parking information such as location, pricing, availability, and operating hours.
 
 ### Problem statement
-TODO: Replace the example text like this with text that describes your project. What is the problem to be addressed?
+
 
 Trying to find parking in Bristol is very difficult as there isn't enough reliable information available online about operating times, pricing and space availability. 
 
@@ -14,7 +14,7 @@ This causes wasted time when trying to travel anywhere in Bristol.
 To address this issue, our project will use data from Open Bristol to make an app where you can see key details such as prices, operating hours, space availability and other useful updates.
 
 ### Business benefits
-TODO: List high-level benefits that this product will provide.
+
 
 The benfits are the app will make parking in Bristol quicker and less stressful by bringing together key information such as location, pricing and availability in one place. 
 By allowing users to share real-time updates, this will improve the accuracy and usefulness of the data.
@@ -45,7 +45,7 @@ Additionally, external factors such as unexpected car park closures, maintenance
 Ensuring user trust and maintaining data reliability will therefore be key challenges.
 
 ## Project Scope
-TODO: Scope of the System of Interest. Include a bullet list of things from your context diagram that are in scope.
+
 
 - Displaying car park infromation through user interface (Website)
 - Allowing drivers to search, view, and pay for parking
@@ -54,7 +54,7 @@ TODO: Scope of the System of Interest. Include a bullet list of things from your
 - Setting up a payment through apps
 
 ## Context diagram
-<<img width="539" height="393" alt="image" src="https://github.com/user-attachments/assets/4f70af21-f3f9-46ed-9e54-3c668c02eed7" />
+<img width="539" height="393" alt="image" src="https://github.com/user-attachments/assets/4f70af21-f3f9-46ed-9e54-3c668c02eed7" />
 
 
 
