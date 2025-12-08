@@ -91,8 +91,8 @@ Give each non-functional requirement a unique ID. e.g. NFR1, NFR2, ...
 
 Indicate which UC the requirement comes from.
 
-NFR1 - The Car Park App shall update the number of available car spaces within 5 seconds of any actual change, ensuring driver receive accurate, up-to-date information about space availability across all car park locations. UC2
+NFR1 - The Car Park App shall update the number of available car spaces within 5 seconds of any actual change, ensuring driver receive accurate, up-to-date information about space availability across all car park locations. UC2 (Perfomance)
 
-NFR2- Every car park location shall be equipped with security systems that are monitored and maintained regularly to ensure 24/7 protection of parked vehicles against damage and theft. UC2
+NFR2- Every car park location shall be equipped with security systems that are monitored and maintained regularly to ensure 24/7 protection of parked vehicles against damage and theft. UC2 (Security)
 
-NFR3 - The Car Park App shall provide immediate feedback within 1 second upon any user interaction, such as tapping a button, to confirm that the system is responding. UC2
+NFR3 - The Car Park App shall provide immediate feedback within 1 second upon any user interaction, such as tapping a button, to confirm that the system is responding. UC2 (Responsivity)
