@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style123.css">
+    <title>Car Park Finder</title>
+</head>
+<body>
+  <header style="position: relative;">
+
+    <div class="w3-top" class="header" id="home">
+      <div class="w3-bar  w3-card w3-left-align w3-large heeder-large-screen" style="background-color: #000015;" >
+        <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-black w3-large " href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+        <a href="#home" class="w3-bar-item w3-button w3-padding-large  w3-hover-black">Car Park Finder</a>
+        <div >
+          <a href="#About this app" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-black" >About this app</a>
+          <a href="#Map" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-black">Map</a>
+          <a href="#Parking Info" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-black"> Parking Info</a>
+          <a href="#Review" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-black">Review</a>
+          <a href="#contact" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-black">Contact</a>
+        </div>
+    
+      </div>
+
+      <!-- Navbar on small screens -->
+      <div id="navDemo" class="w3-bar-block  w3-hide w3-hide-large w3-hide-medium w3-large">
+        <a href="#About this app" class="w3-bar-item w3-button w3-padding-large"onclick="myFunction()">About this app</a>
+        <a href="#Map" class="w3-bar-item w3-button w3-padding-large"onclick="myFunction()">Map</a>
+        <a href="#Parking Info" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()"> Parking Info</a>
+        <a href="#Review" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Review</a>
+        <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Contact</a>
+      </div>
+    </div>
+  </header>
+      <section >
+         <div class="class" id="About this app">
+           <div class="class-1">
+             <div class="class-3">
+              <h1 class="class-2">Park Smart In Bristol</h1>
+              <p>
+                Quick, reliable, real‑time parking information at your fingertips. Find available spaces, check locations, and avoid unnecessary stress.
+
+              </p>
+              <span class="w3-text-white social" style="margin-top:050px">
+                <h2>About This App</h2>
+                <p>Helping Bristol drivers find safe, convenient parking with real‑time updates and clear information.</p>
+                
+             </div>
+              </span>
+             </div>
+           </div>
+         </div>
+      </section>
+            
+        <h2 class="title" id="Map">Map</h2>
+        <div class="Map">
+          <html>
+<head>
+    <title>Parking Location</title>
+        <link rel="stylesheet" href="style123.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700;900&display=swap" rel="stylesheet">
+    <!-- icon links -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- W3 CSS -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+ 
+    <!-- Leaflet stylesheet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin>
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+     crossorigin=""></script>
+
+    <!-- font links -->
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            
+        }
+
+        header {
+            background-color: rgb(99, 33, 33);
+            padding: 10px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        #map {
+          height:100vh;  /* Full screen height minus your header */
+          width: 100vw;   
+                       
+       }
+
+    </style>
+    
+    <script>
+        function outputMarkers(json) {
+            let f = json.features;
+            for(let i=0;i<f.length;i++) {
+                let a = f[i].attributes;
+                let lon = f[i].geometry.x;
+                let lat = f[i].geometry.y;
+                let marker = L.marker([lat,lon]).addTo(map);
+                marker.bindPopup(`<b>${a.NAME}</b><br>${a.TYPE_DESCRIPTION}<br>${a.OPERATOR_NAME}<br>${a.SPACES} spaces<br>${a.OPERATING_TIMES}<br>CCTV: ${a.CCTV}`);
+            }
+        }
+ 
+        function mapQuery() {
+            let url = "https://maps2.bristol.gov.uk/server2/rest/services/ext/ll_transport/MapServer/5/query?where=1%3D1&outFields=NAME,OPERATOR_NAME,SPACES,OPERATING_TIMES,TYPE_DESCRIPTION,CCTV&outSR=4326&f=json";
+            fetch(url).then(r=>r.json()).then(outputMarkers);
+        }
+    </script>
+</head>
+ 
+<body>
+    <header>Location</header>
+    <div id = "map"></div>
+    <script>
+        var urlParams = new URLSearchParams(location.search);
+        var lat = urlParams.get('lat') || 51.4545; // null lat is falsy, number is truthy
+        var lon = urlParams.get('lon') || -2.5879; // null lon is falsy, number is truthy
+ 
+        // see: https://leafletjs.com/examples/quick-start/
+ 
+        // L for Leaflet - initialize the map centred on user or Bristol, zoom level 13
+        var map = L.map('map').setView([lat,lon], 13);
+ 
+        // attribution legally required by the OpenStreetMap license
+        L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(map);
+ 
+        mapQuery();
+    </script>
+</body>
+ 
+</html>
+
+
+        
+        </div>
+        <div class="store" id="Parking Info">
+         <h2 class="title">Parking Info</h2>
+         <html lang="en">
+ 
+<head>
+   
+    <link rel="stylesheet" href="style123.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@600&family=Roboto:wght@500&display=swap">
+ 
+    
+
+    <script>
+        function outputTable(json) {
+            let element = document.getElementById("results");
+            element.innerHTML = "";
+            let features = json.features;
+            for (i=0; i<features.length; i++) {
+                tr = document.createElement('tr');
+                let a = features[i].attributes;
+                let td = document.createElement('td');
+                td.innerHTML = a.NAME;
+                tr.appendChild(td);
+                td = document.createElement('td');
+                td.innerHTML = a.TYPE_DESCRIPTION;
+                tr.appendChild(td);
+                element.appendChild(tr);
+            }
+        }
+ 
+        function query() {
+          let url = "https://maps2.bristol.gov.uk/server2/rest/services/ext/ll_transport/MapServer/5/query?where=1%3D1&outFields=NAME,TYPE_DESCRIPTION&outSR=4326&f=json"
+          fetch(url,{ method: "GET", headers: { Accept: "application/json"}})
+          .then(res=>res.json()).then(outputTable);
+        }
+ 
+        function filter(type) {
+            let enc = encodeURIComponent(type);
+            let url = `https://maps2.bristol.gov.uk/server2/rest/services/ext/ll_transport/MapServer/5/query?where=TYPE_DESCRIPTION%20%3D%20'${enc}'&outFields=NAME,TYPE_DESCRIPTION&outSR=4326&f=json`;
+            fetch(url).then(r=>r.json()).then(outputTable);
+        }
+        function like(type) {
+            let enc = encodeURIComponent(type);
+            let url = `https://maps2.bristol.gov.uk/server2/rest/services/ext/ll_transport/MapServer/5/query?where=TYPE_DESCRIPTION%20%3D%20'${enc}'&outFields=NAME,TYPE_DESCRIPTION&outSR=4326&f=json`;
+            fetch(url).then(r=>r.json()).then(outputTable);
+        }
+ 
+        
+ 
+        function search(term) {
+            let enc = encodeURIComponent(term);
+            let url = `https://maps2.bristol.gov.uk/server2/rest/services/ext/ll_transport/MapServer/5/query?where=&text=${enc}&outfields=*&f=pjson`;
+            fetch(url).then(r=>r.json()).then(outputTable);
+        }
+    </script>
+</head>
+ 
+<body>
+  
+    <div class="grid-container">
+        <head>
+            
+            <form id="search" onsubmit="event.preventDefault(); search(this.searchterm.value)">
+                <input type="text" name="searchterm" placeholder="Search..">
+                <button type="submit"><i class="material-icons">search</i></button>
+            </form>
+          </head>
+    </div>       
+        
+       
+        <main>
+          <div class="table">
+          <button class="secondary w3-black" onclick="filter('Pay and Display')"
+          >Pay & Display</button>
+          <button class="secondary w3-black" onclick="filter('Free')"
+          >Free</button>
+          <button class="secondary w3-black" onclick="filter('Pay on Foot')"
+          >Pay on Foot</button>
+          <button class="secondary w3-black" onclick="filter('Unlimited use')"
+          >Unlimited Use</button>
+          <button class="secondary w3-black" onclick="filter('Parking Meters')"
+          >Parking Meter</button>
+          <button class="secondary w3-black" onclick="filter('Free to shoppers at adjacent shop')"
+          >Free to shoppers at adjacent</button>
+          <button class="secondary w3-black" onclick="filter('Reserved Only')"
+          >Reserved Only</button>
+          <button class="secondary w3-black " onclick="filter('Permit Holders Only')"
+          >Permit Holders Only</button>
+
+          </div>
+    
+        
+          <table class="w3-bar">
+          <thead>
+            <th>NAME</th><th>TYPE_DESCRIPTION</th>
+          </thead>
+          <tbody id="results">
+          </tbody>
+        </table>
+       
+      </main>
+    </div>
+    <script>
+        var urlParams = new URLSearchParams(location.search);
+        var searchTerm = urlParams.get("searchterm");
+        if (searchTerm) search(searchTerm);
+        else query();
+    </script>
+  </body>
+</html>
+
+<div class="event" id="Review" >
+        <h2 class="title">Review Section</h2>
+
+        <div class="event-hero" style="position: relative; ">
+
+          <div class="event-text">
+            
+            <div class="review-form">
+        <h3>Share your experience</h3>
+        <select id="rating">
+            <option value="5">5 Stars</option>
+            <option value="4">4 Stars</option>
+            <option value="3">3 Stars</option>
+            <option value="2">2 Stars</option>
+            <option value="1">1 Star</option>
+        </select>
+
+        <textarea id="comment" placeholder="Write your review..."></textarea>
+
+        <button onclick="addReview()">Submit</button>
+    </div>
+
+             
+  
+             
+     
+              
+              
+                
+           </div>
+          
+          
+        </div>
+
+      </div>
+      <div>        
+
+        
+      <h2 class="title">Contact Us</h2>
+      <div class="contact" id="contact" style="padding-bottom: 10px !important;">
+      <div class="contact-list contact-address"  >
+        <h5><span><i class="fa fa-map-marker w3-xlarge w3-text-red"></i></span>Address</h5>
+        <p>Bristol City Council </p>
+        
+      </div>
+      <div class="contact-list">
+        <h5><span><i class="fa fa-envelope w3-xlarge w3-text-light-green"></i></span>Receive weekly update email</h5>
+        <div class="email-contact">
+          <input placeholder="Email"  type="email" style="margin: 8px 0px !important;"/>
+          
+          <button class="w3-btn w3-yellow w3-round " style="width: 100px; padding:3px 10px !important">Subscribe</button>
+        </div>
+  
+      </div>
+      <div class="contact-list" >
+        <h5><span><i class="fa fa-phone w3-xlarge w3-text-light-blue"></i></span>Phone</h5>
+        <p>  0117 922 2000 </p>
+        
+      </div>
+
+      </div>
+    </div>
+        
+      </main>
+      <div class="w3-padding w3-center" style="background: #d6d4c9;padding: 10px 0px !important; color:#282A35; ">
+        <div style="display: flex; justify-content: center;align-items: center; flex-wrap: wrap;">
+          <p style="margin: 10px !important ">Have a safe journey!</p>
+          
+        </div>
+
+      </div>
+      
+  <script>
+    // Used to toggle the menu on small screens when clicking on the menu button
+    function myFunction() {
+      var x = document.getElementById("navDemo");
+      if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+      } else { 
+        x.className = x.className.replace(" w3-show", "");
+      }
+    }
+    </script>
+</body>
+</html>
