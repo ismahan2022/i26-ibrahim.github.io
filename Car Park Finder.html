@@ -2,11 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
     <link rel="stylesheet" href="style123.css">
     <title>Car Park Finder</title>
 </head>
@@ -25,23 +24,14 @@
           <a href="#contact" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-black">Contact</a>
         </div>
     
-      </div>
-
-      <!-- Navbar on small screens -->
-      <div id="navDemo" class="w3-bar-block  w3-hide w3-hide-large w3-hide-medium w3-large">
-        <a href="#About this app" class="w3-bar-item w3-button w3-padding-large"onclick="myFunction()">About this app</a>
-        <a href="#Map" class="w3-bar-item w3-button w3-padding-large"onclick="myFunction()">Map</a>
-        <a href="#Parking Info" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()"> Parking Info</a>
-        <a href="#Review" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Review</a>
-        <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Contact</a>
-      </div>
+      </div> 
     </div>
   </header>
       <section >
-         <div class="hero" id="About this app">
-           <div class="hero-description">
-             <div class="hero-text">
-              <h1 class="hero-title">Park Smart In Bristol</h1>
+         <div class="class" id="About this app">
+           <div class="class-1">
+             <div class="class-3">
+              <h1 class="class-2">Park Smart In Bristol</h1>
               <p>
                 Quick, reliable, real‑time parking information at your fingertips. Find available spaces, check locations, and avoid unnecessary stress.
 
@@ -150,7 +140,7 @@
 
         
         </div>
-        <div class="store" id="Parking Info">
+        <div id="Parking Info">
          <h2 class="title">Parking Info</h2>
          <html lang="en">
  
@@ -265,33 +255,21 @@
 
 <div class="event" id="Review" >
         <h2 class="title">Review Section</h2>
-
-        <div class="event-hero" style="position: relative; ">
-
-          <div class="event-text">
-            
-            <div class="review-form">
-        <h3>Share your experience</h3>
-        <select id="rating">
-            <option value="5">5 Stars</option>
-            <option value="4">4 Stars</option>
-            <option value="3">3 Stars</option>
-            <option value="2">2 Stars</option>
-            <option value="1">1 Star</option>
-        </select>
+        <div class="review-form">
+          <h3>Share your experience</h3>
+          <select id="rating">
+              <option value="5">5 Stars</option>
+              <option value="4">4 Stars</option>
+              <option value="3">3 Stars</option>
+              <option value="2">2 Stars</option>
+              <option value="1">1 Star</option>
+            </select>
 
         <textarea id="comment" placeholder="Write your review..."></textarea>
 
-        <button onclick="addReview()">Submit</button>
+        <button class= "w3-btn w3-light-grey w3-round" onclick="addReview()">Submit</button>
     </div>
-
-             
-  
-             
-     
-              
-              
-                
+       
            </div>
           
           
@@ -335,16 +313,6 @@
 
       </div>
       
-  <script>
-    // Used to toggle the menu on small screens when clicking on the menu button
-    function myFunction() {
-      var x = document.getElementById("navDemo");
-      if (x.className.indexOf("w3-show") == -1) {
-        x.className += " w3-show";
-      } else { 
-        x.className = x.className.replace(" w3-show", "");
-      }
-    }
-    </script>
+  
 </body>
 </html>
