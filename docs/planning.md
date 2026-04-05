@@ -54,7 +54,7 @@ Ensuring user trust and maintaining data reliability will therefore be key chall
 - Setting up a payment through apps
 
 ## Context diagram
-<img width="539" height="393" alt="image" src="https://github.com/user-attachments/assets/4f70af21-f3f9-46ed-9e54-3c668c02eed7" />
+<img width="539" height="393" alt="image" src="https://github.com/ismahan2022/i26-ibrahim.github.io/blob/main/docs/images/context%20diagram.png?raw=true" />
 
 
 
