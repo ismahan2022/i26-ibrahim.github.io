@@ -34,7 +34,7 @@ The car park system is designed to support two primary actors: drivers, who util
 | **Description** | The driver searches for suitable parking in the area they searched for.|
 | **Actors** | Driver, Software Developer and Operator.|
 | **Assumptions** | The driver has a stable internet connection and knows their location or has access to location services. |
-| **Steps** |  The driver opens the app. Browser loads the parking search interface. The driver selects 'Search Location'. Browser retrieves the driver's detected or manually entered location and sends it to the system. Operator ensures the car park data (pricing, availability and hours) is accurate and updated in the system. Browser receives the list of car parks from the system. The system displays a list of available car parks and information about the car parks like operating hours and pricing. The driver than makes payments if needed with operator. |
+| **Steps** |  The driver opens the app. Browser loads the parking search interface. The driver selects 'Search Location'. Browser retrieves the driver's detected or manually entered location and sends it to the system. Operator ensures the car park data (availability and hours) is accurate and updated in the system. Browser receives the list of car parks from the system. The system displays a list of available car parks and information about the car parks like operating hours and spaces.|
 | **Variations** | If no car parks are found then the system displays a “No parking locations nearby” message. The driver has poor internet connection then the system displays a " no internet connection" message. |
 | **Non-functional** | Search results must appear within 5 seconds. The map and list interface must be easy to navigate. |
 | **Issues** | Real- time data |
@@ -45,17 +45,17 @@ The car park system is designed to support two primary actors: drivers, who util
 | **Description** | The driver searches for available parking.|
 | **Actors** | Driver, Applicant, Browser and Operator.|
 | **Assumptions** | The user has an active internet connection and the parking dataset contains up-to-date information. The system can retrieve pricing, safety facility details and operating hours. |
-| **Steps** |  The driver opens the app or website. Browser loads the homepage and displays the “Find Available Parking” option. The driver selects the option to “Find Available Parking”. The system retrieves parking locations and availability data. The system displays safety facility information if relevant and also shows pricing information and only shows operating hours if necessary. The driver views the results and selects a car park if desired.|
+| **Steps** |  The driver opens the app or website. Browser loads the homepage and displays the “Find Available Parking” option. The driver selects the option to “Find Available Parking”. The system retrieves parking locations and availability data. The system displays safety facility information if relevant and also shows operating hours if necessary. The driver views the results and selects a car park if desired.|
 | **Variations** | Operator can manually update availability or remove inaccurate entries. Operating hours may be excluded when not provided by the database.  |
 | **Non-functional** | Information must be clear and easy to understand. The system must handle high traffic without performance issues. |
 | **Issues** | Inconsistent data if operator updates are delayed. Missing information for some car parks (e.g., safety facilities). Availability may not reflect real-time occupancy. |
 
 | UC4 | USE-CASE 4 | 
 | -------------------------------------- | ------------------- |
-| **Description** | The driver submits real-time information about a car park such as space availability, closures, pricing changes or other helpful updates to improve the accuracy of the app for all users.|
+| **Description** | The driver submits real-time information about a car park such as space availability, closures, or other helpful updates to improve the accuracy of the app for all users.|
 | **Actors** | Driver and Admin.|
 | **Assumptions** | The driver has a stable internet connection and there is an existing car park selected to attach the update to. |
-| **Steps** |  The driver opens the app. The driver selects 'Submit Update'. The driver selects the car park. The user enters details such as spaces, closure, price changes or issues. The system validates the information format. The update is submitted and stored. The update becomes visible to other drivers or flagged for operator review. |
+| **Steps** |  The driver opens the app. The driver selects 'Submit Update'. The driver selects the car park. The user enters details such as spaces, closure, or issues. The system validates the information format. The update is submitted and stored. The update becomes visible to other drivers or flagged for operator review. |
 | **Variations** | The update may require approval before appearing publicly. If the user provides incomplete information then the app prompts them to add missing details. |
 | **Non-functional** | Updates must appear as quick as possible. The system must prevent spam or repeated duplicate updates. |
 | **Issues** | Some updates may be inaccurate or intentionally misleading. Operators may not verify updates immediately. Need for a trust or reputation system to reduce false reports. |
@@ -63,13 +63,15 @@ The car park system is designed to support two primary actors: drivers, who util
 TODO: Your Use-Case diagram should include all use-cases.
 
 # Use-Case diagram 
+### Use-Case 1
+<img width="436" height="321" alt="UC - 1" src="https://github.com/ismahan2022/i26-ibrahim.github.io/blob/main/docs/images/uc1.png?raw=true" />
+### Use-Case 2
+<img width="422" height="333" alt="UC - 2" src="https://github.com/ismahan2022/i26-ibrahim.github.io/blob/main/docs/images/uc2.png?raw=true" />
+### Use-Case 3
+<img width="542" height="338" alt="UC - 3" src="https://github.com/ismahan2022/i26-ibrahim.github.io/blob/main/docs/images/uc3.png?raw=true" />
+### Use-Case 4
+<img width="542" height="338" alt="UC - 3" src="https://github.com/ismahan2022/i26-ibrahim.github.io/blob/main/UC4.png?raw=true" />
 
-<img width="436" height="321" alt="UC - 1" src="https://github.com/user-attachments/assets/8b2ed0da-0a2b-4a48-9ad9-b5ec0040f27f" />
-<img width="422" height="333" alt="UC - 2" src="https://github.com/user-attachments/assets/577503fe-78f1-44c3-9810-7be215deaff9" />
-
-<img width="542" height="338" alt="UC - 3" src="https://github.com/user-attachments/assets/b5eea73e-028a-4251-9d2b-e218425c2aee" />
-
-<img scr="UC4.png"/>
 ## Software Requirements Specification
 ### Functional requirements
 TODO: create a list of functional requirements. 
