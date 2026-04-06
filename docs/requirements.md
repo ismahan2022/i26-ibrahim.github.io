@@ -22,7 +22,7 @@ The car park system is designed to support two primary actors: drivers, who util
 | **Description** | As a driver, I need access to available and secure parking spaces to ensure convenient and safe vehicle storage.|
 | **Actors** |Driver|
 | **Assumptions** | The driver should has a stable internet connection to access the car park system. </td></tr>
-| **Steps** | Open the car park app. Turn on the driver's location. Search for nearby parking. Choose the location. View available spaces. Make payment. |
+| **Steps** | Open the car park app. Search for nearby parking. Choose the location. View parking information. |
 | **Variations** | If the driver has poor internet connection, the system cannot load parking data or complete payment.|
 | **Non-functional** | The payment process must be secure and encrypted.|
 | **Issues** | Internet stability and real-time data accuracy |
@@ -65,7 +65,7 @@ TODO: Your Use-Case diagram should include all use-cases.
 # Use-Case diagram 
 
 ### Use-Case 1
-<img width="436" height="321" alt="UC - 1" src="https://github.com/ismahan2022/i26-ibrahim.github.io/blob/main/docs/images/uc1.png?raw=true" />
+<img width="436" height="321" alt="UC - 1" src="https://github.com/ismahan2022/i26-ibrahim.github.io/blob/main/docs/images/uc1...png?raw=true" />
 
 ### Use-Case 2
 <img width="422" height="333" alt="UC - 2" src="https://github.com/ismahan2022/i26-ibrahim.github.io/blob/main/docs/images/uc2.png?raw=true" />
@@ -85,7 +85,7 @@ TODO: create a list of functional requirements.
     
 
 
-FR1- The system shall require users to log in with valid username and passwords before accessing personal data or system features. UC2
+FR1- The system shall allow users to search for car parks by name or keyword. UC1
 
 FR2- The system shall display available car park information based on the driver's current location, prioritizing car parks nearest to the driver. UC2
 
@@ -99,6 +99,6 @@ Indicate which UC the requirement comes from.
 
 NFR1 - The Car Park App shall update the number of available car spaces within 5 seconds of any actual change, ensuring driver receive accurate, up-to-date information about space availability across all car park locations. UC2 (Perfomance)
 
-NFR2- Every car park location shall be equipped with security systems that are monitored and maintained regularly to ensure 24/7 protection of parked vehicles against damage and theft. UC2 (Security)
+NFR2- The system shall display security‑related information (e.g., CCTV availability) for each car park to help users assess safety. UC3 (Security)
 
 NFR3 - The Car Park App shall provide immediate feedback within 1 second upon any user interaction, such as tapping a button, to confirm that the system is responding. UC2 (Responsivity)
