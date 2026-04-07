@@ -15,7 +15,7 @@ TODO: List and describe the actors/users for this product.
 
 The car park system is designed to support two primary actors: drivers, who utilize the service to locate and access parking, and administrators, who oversee system operations and maintain facility-related data.
 
-### Use Cases
+### Use Cases 
 
 | UC1| USE-CASE 1 | 
 | -------------------------------------- | ------------------- |
@@ -87,7 +87,7 @@ TODO: create a list of functional requirements.
 
 FR1- The system shall allow users to search for car parks by name or keyword. UC1
 
-FR2- The system shall display available car park information based on the driver's current location, prioritizing car parks nearest to the driver. UC2
+FR2- The system shall retrieve  car park information from the dataset and display the results within the nearest car parks shown first. UC2
 
 FR3- The system shall present detailed information on the safety facilities available at each car park location. UC2
 
