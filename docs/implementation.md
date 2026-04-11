@@ -33,3 +33,34 @@ TODO: Repeat as necessary
 
 # User guide
 TODO: Explain how each use-case works by providing step-by-step screenshots for each use-case. This should be based on a tested scenario.
+### Use-case 1- Search for a car park
+
+1. Parking Info page before search.
+   
+![Insert here](images/uc1-1.png)
+
+2. Parking Info page after entering a valid search term.
+
+![Insert here](images/uc1-2.png)
+
+3. Parking Info page with empty search and no results.
+
+![Insert here](images/uc1-3.png)
+
+### Use-case 2- View car park's information on Map
+
+1. Map with car park location loaded from dataset
+
+![Insert here](images/uc2-1.png)
+
+2. During testing, the dataset loaded successfully every time, so the failure scenario (TC2.2) did not occur. Therefore, no screenshot is provided. However, the system is designed to display “No car parks nearby” if the dataset fails to load.
+
+### Use-case 3- View safety information
+
+1. Pop up with CCTV available
+
+![Insert here](images/uc3-1.png)
+
+2. Pop up with CCTV unavailable
+
+![Insert here](images/uc3-2.png)
