@@ -11,17 +11,24 @@ The implemented system is a Car Park Finder web application that retrieves parki
 TODO: Provide an outline of the project folder structure and the role of each file within it.
 provide a table listing the number of jslint warnings/reports for each module.
 
-<img width="343" height="367" alt="image" src="https://github.com/ismahan2022/i26-ibrahim.github.io/blob/main/docs/images/project%20structure.png?raw=true" />
+![Insert here](images/ProjectStructure.png)
+
 
 ## Software Architecture
 TODO: Describe the major components of your architecture. Are any particular architectural styles being used?
 
-![Insert your component Diagram here](images/component.png)
+![Insert your component Diagram here](images/SoftwareArchitecture.png)
+
+
 
 ## Bristol Open Data API
 TODO: Document each query to Bristol Open Data
 
 ![UML Class diagrams representing JSON query results](images/class1.png)
+
+![UML Class diagrams representing JSON query results](images/BristolOpenDataAPI.png)
+
+
 TODO: Repeat as necessary
 
 # User guide
