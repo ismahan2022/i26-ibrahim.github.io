@@ -65,13 +65,19 @@ TODO: Your Use-Case diagram should include all use-cases.
 # Use-Case diagram 
 
 ### Use-Case 1
-<img width="436" height="321" alt="UC - 1" src="https://github.com/ismahan2022/i26-ibrahim.github.io/blob/main/docs/images/uc1...png?raw=true" />
+![
+](images/uc1...png)
+
 
 ### Use-Case 2
-<img width="422" height="333" alt="UC - 2" src="https://github.com/ismahan2022/i26-ibrahim.github.io/blob/main/docs/images/uc2.png?raw=true" />
+![
+](images/uc2.png)
+
 
 ### Use-Case 3
-<img width="542" height="338" alt="UC - 3" src="https://github.com/ismahan2022/i26-ibrahim.github.io/blob/main/docs/images/uc3.png?raw=true" />
+![
+](images/uc3.png)
+
 
 ### Use-Case 4
 <img width="542" height="338" alt="UC - 3" src="https://github.com/ismahan2022/i26-ibrahim.github.io/blob/main/UC4.png?raw=true" />
