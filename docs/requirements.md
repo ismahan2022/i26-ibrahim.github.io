@@ -6,14 +6,23 @@
 ### User stories
 
 
-As a driver I want to know where my nearest car park that is open so when I leave my house I am able to park my car.
-As a driver I want to know where my nearest car park that is free so when I leave my house I am able to park my car without needing to pay.
-As a driver I want to know where my nearest car park that has enough space so when I leave my house I am able to find space to park my car.
+As a driver I want to know where the nearest car park is so that I can park my car when leaving my house. 
+
+As a driver I want to find the nearest free car park so that I can park without needing to pay.
+
+As a driver I want to know which nearby car parks have available spaces so that I can find parking without difficulty. 
 
 ### Actors
-TODO: List and describe the actors/users for this product.
 
-The car park system is designed to support two primary actors: drivers, who utilize the service to locate and access parking, and administrators, who oversee system operations and maintain facility-related data.
+
+Driver: The driver utilizes that application to search for parking information, view relevant details, and access real-time updates such as operating hours, parking name, and availability. 
+
+Administrator: The administrator utilizes the system to review, vertify, and manage user-submitted updates, ensuring that all displayed information remains reliable and accurate. 
+
+Browser: The browser processes user interactions, communicates with the system to obtain parking information, and presents the results in a clear and user-friendly format. 
+
+Operator: The operator is responsible for mainting tools and updating the parking dataset to ensure that information such as availability, operating hours, and facility information remain accurate and up to date.
+
 
 ### Use Cases 
 
