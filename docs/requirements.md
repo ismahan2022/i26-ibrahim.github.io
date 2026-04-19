@@ -2,6 +2,7 @@
 
 ## User Needs
 
+Drivers in Bristol need a trustworthy and accessible solution that offers clear, real‑time parking information, enabling them to make informed decisions, minimise travel delays, and reduce the stress associated with locating suitable parking.
 
 ### User stories
 
@@ -69,7 +70,7 @@ Operator: The operator is responsible for mainting tools and updating the parkin
 | **Non-functional** | Updates must appear as quick as possible. The system must prevent spam or repeated duplicate updates. |
 | **Issues** | Some updates may be inaccurate or intentionally misleading. Operators may not verify updates immediately. Need for a trust or reputation system to reduce false reports. |
 
-TODO: Your Use-Case diagram should include all use-cases.
+
 
 # Use-Case diagram 
 
@@ -93,12 +94,6 @@ TODO: Your Use-Case diagram should include all use-cases.
 
 ## Software Requirements Specification
 ### Functional requirements
-TODO: create a list of functional requirements. 
-    e.g. "The system shall ..."
-    Give each functional requirement a unique ID. e.g. FR1, FR2, ...
-    Indicate which UC the requirement comes from.
-    
-
 
 FR1- The system shall allow users to search for car parks by name or keyword. UC1
 
@@ -107,10 +102,6 @@ FR2- The system shall retrieve  car park information from the dataset and displa
 FR3- The system shall present detailed information on the safety facilities available at each car park location. UC2
 
 ### Non-Functional Requirements
-TODO: Consider one or more [quality attributes](https://en.wikipedia.org/wiki/ISO/IEC_9126) to suggest a small number of non-functional requirements.
-Give each non-functional requirement a unique ID. e.g. NFR1, NFR2, ...
-
-Indicate which UC the requirement comes from.
 
 NFR1 - The Car Park App shall update the number of available car spaces within 5 seconds of any actual change, ensuring driver receive accurate, up-to-date information about space availability across all car park locations. UC2 (Perfomance)
 
