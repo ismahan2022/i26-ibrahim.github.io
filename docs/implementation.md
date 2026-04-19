@@ -8,31 +8,36 @@ The implemented system is a Car Park Finder web application that retrieves parki
 
 
 ## Project Structure
-TODO: Provide an outline of the project folder structure and the role of each file within it.
-provide a table listing the number of jslint warnings/reports for each module.
+
+This section outlines the project's folder structure and explains the purpose of each file.
 
 ![Insert here](images/ProjectStructure.png)
 
 
 ## Software Architecture
-TODO: Describe the major components of your architecture. Are any particular architectural styles being used?
+
+The diagram below illustrates the major components of the system, including the Car Park Finder interface, the API for retrieving data, and the connection to the Open Data Bristol. It also highlights the external libraries and stylesheets that support the application's visual layout and contribute to a smooth user experience within this architecture.
+
 
 ![Insert your component Diagram here](images/SoftwareArchitecture.png)
 
 
 
 ## Bristol Open Data API
-TODO: Document each query to Bristol Open Data
 
-![UML Class diagrams representing JSON query results](images/class1.png)
+
+The diagram below represents the JSON structure obtained from the Bristol Open Data API used in Car Park Finder application. It models how the data is organised within the dataset, including JSON object, features, the attributes and geometry. Overall, this diagram illustrates how the dataset is structured and how the system display this information within the application.
+
 
 ![UML Class diagrams representing JSON query results](images/BristolOpenDataAPI.png)
 
 
-TODO: Repeat as necessary
 
 # User guide
-TODO: Explain how each use-case works by providing step-by-step screenshots for each use-case. This should be based on a tested scenario.
+
+
+The following user guide demostrates how each use case operates within the implemented system. Each scenario is provided with step-by-step screenshots to prove the system functions as intended.
+
 ### Use-case 1- Search for a car park
 
 1. Parking Info page before search.
