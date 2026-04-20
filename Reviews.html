@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Car Park Finder - Reviews</title>
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body class="w3-light-grey">
+
+        <header class="main-header w3-white">
+            <h1 class="logo">Car Park Finder</h1>
+        </header>
+
+        <nav class="topnav">
+            <a href="index.html">Home</a>
+            <a href="map.html">Map</a>
+            <a href="Carparkfinder.html">CarParkFinder</a>
+            <a href="Reviews.html" class="active">Reviews</a>
+            <a href="CurrentIssues.html">Current Issues</a>
+        </nav>
+
+        <main class="dashboard">
+            <div class="w3-container w3-white w3-card w3-round w3-padding-24" id="reviewContainer">
+                <h2 class="w3-margin-0" id="reviewHeader">User Reviews</h2>
+                <p class="w3-text-grey" id="reviewSubtext">Share your experience or read feedback from other Bristol drivers.</p>
+                <hr>
+
+                <div id="reviewFormBody" class="w3-row-padding" style="margin-top:20px;">
+                    <div class="w3-col m4 l4">
+                        <label class="w3-text-blue"><b>Select Location</b></label>
+                        <select size="8" id="locationSelect" class="w3-select w3-border w3-round w3-margin-top">
+                            <option disabled selected>Loading locations...</option>
+                        </select>
+                    </div>
+
+                    <div class="w3-col m8 l8">
+                        <div class="w3-container w3-light-grey w3-round w3-padding-16">
+                            <label class="w3-text-blue"><b>Write a Review</b></label>
+                            <textarea id="reviewText" class="w3-input w3-border w3-round w3-margin-top" style="height:120px; resize: none;" placeholder="What was your experience like?"></textarea>
+                            
+                            <div class="w3-row w3-margin-top">
+                                <div class="w3-half">
+                                    <label><b>Rating</b></label>
+                                    <div class="stars" style="font-size: 24px; color: #6366f1;">★★★★☆</div>
+                                </div>
+                                <div class="w3-half w3-right-align">
+                                    <button class="w3-button w3-blue w3-round w3-margin-top" onclick="submitReview()">Submit Review</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="successMessage" class="w3-center w3-padding-64" style="display:none;">
+                    <i class="fa fa-check-circle w3-text-green" style="font-size:64px;"></i>
+                    <h2 class="w3-text-green">Review Sent!</h2>
+                    <p>Thank you for helping other drivers in Bristol.</p>
+                    <button class="w3-button w3-light-grey w3-round" onclick="location.reload()">Send another review</button>
+                </div>
+            </div>
+        </main>
+
+        <footer class="w3-container w3-center w3-padding-16">
+            <p class="w3-text-grey w3-small">Bristol City Council Data &copy; 2026</p>
+        </footer>
+        <script>
+            function loadLocations() {
+                const url = "https://maps2.bristol.gov.uk/server2/rest/services/ext/ll_transport/MapServer/5/query?where=1%3D1&outFields=NAME&f=json";
+                
+                fetch(url)
+                .then(response => response.json())
+                .then(data => {
+                    const select = document.getElementById("locationSelect");
+                    select.innerHTML = "";
+                    
+                    data.features.forEach(f => {
+                        let option = document.createElement("option");
+                        option.value = f.attributes.NAME;
+                        option.text = f.attributes.NAME;
+                        select.appendChild(option);
+                    });
+                })
+                .catch(err => console.error("Error loading locations:", err));
+            }
+
+            function submitReview() {
+                const location = document.getElementById("locationSelect").value;
+                const text = document.getElementById("reviewText").value;
+                if (!location || location === "Loading locations..." || text.trim() === "") {
+                    alert("Please select a location and write a review first!");
+                    return;
+                }
+
+                document.getElementById("reviewFormBody").style.display = "none";
+                document.getElementById("reviewHeader").style.display = "none";
+                document.getElementById("reviewSubtext").style.display = "none";
+                document.getElementById("successMessage").style.display = "block";
+            }
+            window.onload = loadLocations;
+        </script>
+    </body>
+</html>

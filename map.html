@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Car Park Finder - Live Map</title>
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    </head>
+    <body class="w3-light-grey">
+
+        <header class="main-header w3-white">
+            <h1 class="logo">Car Park Finder</h1>
+            <div class="header-search">
+                <input type="text" placeholder="Search map..." class="w3-border w3-round" style="padding:8px; width:200px;"/>
+                <button class="w3-button w3-blue w3-round">Search</button>
+            </div>
+        </header>
+
+        <nav class="topnav">
+            <a href="index.html">Home</a>
+            <a href="map.html" class="active">Map</a>
+            <a href="Carparkfinder.html">CarParkFinder</a>
+            <a href="Reviews.html">Reviews</a>
+            <a href="CurrentIssues.html">Current Issues</a>
+        </nav>
+
+        <main class="dashboard">
+            <div class="w3-container w3-white w3-card w3-round w3-padding-16">
+                <h2 class="w3-margin-0 w3-padding-bottom">Live Parking Map</h2>
+                <p class="w3-text-grey">Zoom in to see availability for specific car parks across Bristol.</p>
+                <div id="map" style="height: 500px;"></div>
+            </div>
+        </main>
+
+        <script>
+            var map = L.map('map').setView([51.4545, -2.5879], 13);
+            L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
+
+            function outputMarkers(json) {
+                let f = json.features;
+                for(let i=0; i<f.length; i++) {
+                    let a = f[i].attributes;
+                    let lat = f[i].geometry.y;
+                    let lon = f[i].geometry.x;
+                    let marker = L.marker([lat, lon]).addTo(map);
+                    marker.bindPopup(`<b>${a.NAME}</b><br>${a.SPACES} spaces`);
+                }
+            }
+
+            fetch("https://maps2.bristol.gov.uk/server2/rest/services/ext/ll_transport/MapServer/5/query?where=1%3D1&outFields=NAME,SPACES&outSR=4326&f=json")
+            .then(r => r.json())
+            .then(outputMarkers);
+        </script>
+    </body>
+</html>
