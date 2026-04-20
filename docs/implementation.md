@@ -40,23 +40,19 @@ The following user guide demostrates how each use case operates within the imple
 
 ### Use-case 1- Search for a car park
 
-1. Parking Info page before search.
-   
-![Insert here](images/uc1-1.png)
+1. Parking Info page with empty search.
+
+![Insert here](images/search1.png)
 
 2. Parking Info page after entering a valid search term.
 
-![Insert here](images/uc1-2.png)
-
-3. Parking Info page with empty search and no results.
-
-![Insert here](images/uc1-3.png)
+![Insert here](images/search11.png)
 
 ### Use-case 2- View car park's information on Map
 
 1. Map with car park location loaded from dataset
 
-![Insert here](images/uc2-1.png)
+![Insert here](images/Map3.png)
 
 2. During testing, the dataset loaded successfully every time, so the failure scenario (TC2.2) did not occur. Therefore, no screenshot is provided. However, the system is designed to display “No car parks nearby” if the dataset fails to load.
 
@@ -64,8 +60,8 @@ The following user guide demostrates how each use case operates within the imple
 
 1. Pop up with CCTV available
 
-![Insert here](images/uc3-1.png)
+![Insert here](images/Map2.png)
 
 2. Pop up with CCTV unavailable
 
-![Insert here](images/uc3-2.png)
+![Insert here](images/Map1.png)
