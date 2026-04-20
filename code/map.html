@@ -46,7 +46,7 @@
                     let lat = f[i].geometry.y;
                     let lon = f[i].geometry.x;
                     let marker = L.marker([lat, lon]).addTo(map);
-                    marker.bindPopup(`<b>${a.NAME}</b><br>${a.SPACES} spaces<br>Operator: ${a.OPERATOR_NAME}<br>Times: ${a.OPERATING_TIMES}<br>CCTV: ${a.CCTV === 'Y' ? 'Yes' : 'No'}`);
+                    marker.bindPopup(`<b>${a.NAME}</b><br>${a.SPACES} spaces<br>Operator: ${a.OPERATOR_NAME}<br>Times: ${a.OPERATING_TIMES}<br>CCTV: ${a.CCTV}`);
                 }
             }
 
