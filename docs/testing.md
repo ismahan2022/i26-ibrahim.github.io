@@ -27,7 +27,7 @@ The system was tested using a set of manual and automated test cases, each ident
 |----------------|--------------|------------------------------------------------|-----------------------------------------------------------|
 | FR1            | TC1.1        |Input "Ducie" into search                       | System displays matching car park results                 |
 | FR1            | TC1.2        |Input in search is empty and search is clicked  | System displays all car parks                             |
-| FR2            | TC2.1        | Dataset loads successfully                     | System displays matching car park results                 | 
+| FR2            | TC2.1        | Dataset loads successfully                     | App displays nearest car park from the dataset         | 
 | FR2            | TC2.2        | Dataset doesnt load                            | App displays No car parks nearby                          |
 | FR3            | TC3.1        | Car park data is available                     | Map displays facilities like CTTV                         |
 | FR3            | TC3.2        | Car park data is not available                 | App handles null and displays not available or equivalent |
