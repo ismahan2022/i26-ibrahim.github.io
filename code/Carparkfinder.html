@@ -33,7 +33,7 @@
 
                 <div class="w3-row w3-margin-top">
                     <div class="w3-col s12 m8">
-                        <input type="text" id="searchInput" class="w3-input w3-border w3-round" placeholder="Enter location name...">
+                        <input type="text" id="searchInput" class="w3-input w3-border w3-round" placeholder="Enter location name">
                     </div>
                     <div class="w3-col s12 m4 w3-padding-small">
                         <button class="w3-button w3-blue w3-round w3-block" onclick="search()">Search</button>
@@ -41,9 +41,14 @@
                 </div>
 
                 <div class="w3-center w3-padding-16">
-                    <button class="w3-button w3-black w3-round-xxlarge w3-small" onclick="filter('Free')">Free</button>
-                    <button class="w3-button w3-black w3-round-xxlarge w3-small" onclick="filter('Pay and Display')">Pay & Display</button>
-                    <button class="w3-button w3-black w3-round-xxlarge w3-small" onclick="query()">Show All</button>
+                    <button class="w3-button w3-black w3-round-xxlarge w3-small w3-margin-bottom" onclick="query()">Show All</button>
+                    <button class="w3-button w3-black w3-round-xxlarge w3-small w3-margin-bottom" onclick="filter('Free')">Free</button>
+                    <button class="w3-button w3-black w3-round-xxlarge w3-small w3-margin-bottom" onclick="filter('Pay and Display')">Pay & Display</button>
+                    <button class="w3-button w3-black w3-round-xxlarge w3-small w3-margin-bottom" onclick="filter('Pay on Foot')">Pay on Foot</button>
+                    <button class="w3-button w3-black w3-round-xxlarge w3-small w3-margin-bottom" onclick="filter('Parking Meters')">Meters</button>
+                    <button class="w3-button w3-black w3-round-xxlarge w3-small w3-margin-bottom" onclick="filter('Permit Holders Only')">Permits</button>
+                    <button class="w3-button w3-black w3-round-xxlarge w3-small w3-margin-bottom" onclick="filter('Reserved Only')">Reserved</button>
+                    <button class="w3-button w3-black w3-round-xxlarge w3-small w3-margin-bottom" onclick="filter('Unlimited use')">Unlimited</button>
                 </div>
 
                 <div class="w3-responsive w3-margin-top">
@@ -64,13 +69,17 @@
         <footer class="w3-container w3-center w3-padding-16">
             <p class="w3-text-grey w3-small">Bristol City Council Data &copy; 2026</p>
         </footer>
-
         <script>
             function outputTable(json) {
                 let element = document.getElementById("results");
                 element.innerHTML = "";
-                let features = json.features;
-                features.forEach(f => {
+                
+                if (!json.features || json.features.length === 0) {
+                    element.innerHTML = "<tr><td colspan='2' class='w3-center'>No results found</td></tr>";
+                    return;
+                }
+
+                json.features.forEach(f => {
                     let a = f.attributes;
                     let row = `<tr><td>${a.NAME}</td><td>${a.TYPE_DESCRIPTION}</td></tr>`;
                     element.innerHTML += row;
@@ -83,13 +92,15 @@
             }
 
             function filter(type) {
-                let url = `https://maps2.bristol.gov.uk/server2/rest/services/ext/ll_transport/MapServer/5/query?where=TYPE_DESCRIPTION='${type}'&outFields=NAME,TYPE_DESCRIPTION&f=json`;
+                let encodedType = encodeURIComponent(type);
+                let url = `https://maps2.bristol.gov.uk/server2/rest/services/ext/ll_transport/MapServer/5/query?where=TYPE_DESCRIPTION='${encodedType}'&outFields=NAME,TYPE_DESCRIPTION&f=json`;
                 fetch(url).then(r => r.json()).then(outputTable);
             }
 
             function search() {
                 let term = document.getElementById("searchInput").value;
-                let url = `https://maps2.bristol.gov.uk/server2/rest/services/ext/ll_transport/MapServer/5/query?where=NAME LIKE '%${term}%'&outFields=NAME,TYPE_DESCRIPTION&f=json`;
+                let encodedTerm = encodeURIComponent(term.toUpperCase());
+                let url = `https://maps2.bristol.gov.uk/server2/rest/services/ext/ll_transport/MapServer/5/query?where=UPPER(NAME) LIKE '%${encodedTerm}%'&outFields=NAME,TYPE_DESCRIPTION&f=json`;
                 fetch(url).then(r => r.json()).then(outputTable);
             }
 
