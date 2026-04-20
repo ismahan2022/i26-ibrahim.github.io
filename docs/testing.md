@@ -36,5 +36,5 @@ The system was tested using a set of manual and automated test cases, each ident
 | NFR2           | TC5.1        | Safety data available                          | App displays CCTV: Yes                                    |
 | NFR2           | TC5.2        | Safety data missing i.e null                   | App displays CCTV: NO                                     |
 | NFR3           | TC6.1        | User clicks any button                         | System provides feedback/response within 1 second         |
-| NFR3           | TC6.2        | User using moblie                              | UI remains responsive with no lag over 1 second           |
+| NFR3           | TC6.2        | User using moblie device                       | UI remains responsive with no lag over 1 second           |
 
