@@ -9,18 +9,18 @@ The system was tested using a set of manual and automated test cases, each ident
 
 | Use-Case ID | Requirement ID | Software module      | Test case ID | Status |
 |-------------|----------------|----------------------|--------------|--------|
-| UC1         | FR1.1          | Car Park Finder.html | TF1.1        | pass   |
-| UC1         | FR1.2          | Car Park Finder.html | TF1.2        | pass   |
-| UC2         | FR2.1          | Car Park Finder.html | TF2.1        | pass   |
-| UC2         | FR2.2          | Car Park Finder.html | TF2.2        | fail   |
-| UC2         | FR3.1          | Car Park Finder.html | TNF3.1       | pass   |
-| UC2         | FR3.2          | Car Park Finder.html | TNF3.2       | pass   |
-| UC2         | NFR4.1         | Car Park Finder.html | TNF4.1       | pass   |
-| UC2         | NFR4.2         | Car Park Finder.html | TNF4.2       | pass   |
-| UC3         | NFR5.1         | Car Park Finder.html | TNF5.1       | pass   |
-| UC3         | NFR5.2         | Car Park Finder.html | TNF5.2       | pass   |
-| UC2         | NFR6.1         | Car Park Finder.html | TNF6.1       | pass   |
-| UC2         | NFR6.2         | Car Park Finder.html | TNF6.2       | pass   |
+| UC1         | FR1.1          | Carparkfinder.html | TF1.1        | pass   |
+| UC1         | FR1.2          | Carparkfinder.html | TF1.2        | pass   |
+| UC2         | FR2.1          | Carparkfinder.html | TF2.1        | pass   |
+| UC2         | FR2.2          | Carparkfinder.html | TF2.2        | fail   |
+| UC2         | FR3.1          | Carparkfinder.html | TNF3.1       | pass   |
+| UC2         | FR3.2          | Carparkfinder.html | TNF3.2       | pass   |
+| UC2         | NFR4.1         | Carparkfinder.html | TNF4.1       | pass   |
+| UC2         | NFR4.2         | Carparkfinder.html | TNF4.2       | pass   |
+| UC3         | NFR5.1         | Carparkfinder.html | TNF5.1       | pass   |
+| UC3         | NFR5.2         | Carparkfinder.html | TNF5.2       | pass   |
+| UC2         | NFR6.1         | Carparkfinder.html | TNF6.1       | pass   |
+| UC2         | NFR6.2         | Carparkfinder.html | TNF6.2       | pass   |
 
 ## Test Plan
 | Requirement ID | Test Case ID | Inputs/ Precondition           | Expected output                                               |
