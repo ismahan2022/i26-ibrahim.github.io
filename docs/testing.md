@@ -12,7 +12,7 @@ The system was tested using a set of manual and automated test cases, each ident
 | UC1         | FR1            | Carparkfinder.html   | TC1.1        | pass   |
 | UC1         | FR1            | Carparkfinder.html   | TC1.2        | pass   |
 | UC2         | FR2            | Carparkfinder.html   | TC2.1        | pass   |
-| UC2         | FR2            | Carparkfinder.html   | TC2.2        | fail   |
+| UC2         | FR2            | Carparkfinder.html   | TC2.2        | pass   |
 | UC3         | FR3            | map.html             | TC3.1        | pass   |
 | UC3         | FR3            | map.html             | TC3.2        | pass   |
 | UC4         | NFR1           | Reviews.html         | TC4.1        | pass   |
