@@ -34,25 +34,6 @@
                 <div id="map" style="height: 500px;"></div>
             </div>
         </main>
-
-        <script>
-            var map = L.map('map').setView([51.4545, -2.5879], 13);
-            L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
-
-            function outputMarkers(json) {
-                let f = json.features;
-                for(let i=0; i<f.length; i++) {
-                    let a = f[i].attributes;
-                    let lat = f[i].geometry.y;
-                    let lon = f[i].geometry.x;
-                    let marker = L.marker([lat, lon]).addTo(map);
-                    marker.bindPopup(`<b>${a.NAME}</b><br>${a.SPACES} spaces<br>Operator: ${a.OPERATOR_NAME}<br>Times: ${a.OPERATING_TIMES}<br>CCTV: ${a.CCTV}`);
-                }
-            }
-
-            fetch("https://maps2.bristol.gov.uk/server2/rest/services/ext/ll_transport/MapServer/5/query?where=1%3D1&outFields=NAME,SPACES,OPERATOR_NAME,OPERATING_TIMES,CCTV&outSR=4326&f=json")
-            .then(r => r.json())
-            .then(outputMarkers);
-        </script>
+        <script src="script.js"></script>
     </body>
 </html>

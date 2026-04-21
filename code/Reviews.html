@@ -23,8 +23,8 @@
 
         <main class="dashboard">
             <div class="w3-container w3-white w3-card w3-round w3-padding-24" id="reviewContainer">
-                <h2 class="w3-margin-0" id="reviewHeader">User Reviews</h2>
-                <p class="w3-text-grey" id="reviewSubtext">Share your experience or read feedback from other Bristol drivers.</p>
+                <h2 class="w3-margin-0" id="reviewHeader">Send us your Reviews</h2>
+                <p class="w3-text-grey" id="reviewSubtext">Share your experience.</p>
                 <hr>
 
                 <div id="reviewFormBody" class="w3-row-padding" style="margin-top:20px;">
@@ -65,40 +65,6 @@
         <footer class="w3-container w3-center w3-padding-16">
             <p class="w3-text-grey w3-small">Bristol City Council Data &copy; 2026</p>
         </footer>
-        <script>
-            function loadLocations() {
-                const url = "https://maps2.bristol.gov.uk/server2/rest/services/ext/ll_transport/MapServer/5/query?where=1%3D1&outFields=NAME&f=json";
-                
-                fetch(url)
-                .then(response => response.json())
-                .then(data => {
-                    const select = document.getElementById("locationSelect");
-                    select.innerHTML = "";
-                    
-                    data.features.forEach(f => {
-                        let option = document.createElement("option");
-                        option.value = f.attributes.NAME;
-                        option.text = f.attributes.NAME;
-                        select.appendChild(option);
-                    });
-                })
-                .catch(err => console.error("Error loading locations:", err));
-            }
-
-            function submitReview() {
-                const location = document.getElementById("locationSelect").value;
-                const text = document.getElementById("reviewText").value;
-                if (!location || location === "Loading locations..." || text.trim() === "") {
-                    alert("Please select a location and write a review first!");
-                    return;
-                }
-
-                document.getElementById("reviewFormBody").style.display = "none";
-                document.getElementById("reviewHeader").style.display = "none";
-                document.getElementById("reviewSubtext").style.display = "none";
-                document.getElementById("successMessage").style.display = "block";
-            }
-            window.onload = loadLocations;
-        </script>
+        <script src="script.js"></script>
     </body>
 </html>
