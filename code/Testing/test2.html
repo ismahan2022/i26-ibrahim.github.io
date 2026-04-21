@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Test 2 - Dataset loading</title>
+        <link rel="stylesheet" href="https://code.jquery.com/qunit/qunit-2.20.1.css">
+    </head>
+    <body>
+        <div id="qunit"></div>
+        <div id="qunit-fixture">
+            <table id="results"></table>
+        </div>
+        <script src="https://code.jquery.com/qunit/qunit-2.20.1.js"></script>
+        <script src="../script.js"></script>
+        <script>
+            QUnit.test('TC2.1/TC2.2 - Dataset loading', function(assert) {
+                outputTable({ features: [{ attributes: { NAME: "Nearest", TYPE_DESCRIPTION: "Park" } }] });
+                assert.ok(document.getElementById("results").innerHTML.includes("Nearest"), "Displays data when loaded");
+                
+                outputTable({ features: [] });
+                assert.ok(document.getElementById("results").innerHTML.includes("No results found"), "Handles load failure");
+            });
+        </script>
+    </body>
+</html>

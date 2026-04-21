@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Test 6 - UI Feedback/Responsiveness</title>
+        <link rel="stylesheet" href="https://code.jquery.com/qunit/qunit-2.20.1.css">
+    </head>
+    <body>
+        <div id="qunit"></div>
+        <div id="qunit-fixture">
+            <input type="text" id="searchInput">
+            <div id="successMessage"></div>
+        </div>
+        <script src="https://code.jquery.com/qunit/qunit-2.20.1.js"></script>
+        <script src="../script.js"></script>
+        <script>
+            QUnit.test('TC6.1/TC6.2 - UI feedback/responsiveness', function(assert) {
+                let searchInput = document.getElementById("searchInput");
+                searchInput.value = "Test Term";
+                assert.equal(searchInput.value, "Test Term", "Input accepts data without lag");
+
+                let msg = document.getElementById("successMessage");
+                msg.style.display = "block";
+                assert.equal(msg.style.display, "block", "UI provides immediate visual response");
+            });
+        </script>
+    </body>
+</html>

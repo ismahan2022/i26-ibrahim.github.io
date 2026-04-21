@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Test 3 -  Map data availability</title>
+        <link rel="stylesheet" href="https://code.jquery.com/qunit/qunit-2.20.1.css">
+    </head>
+    <body>
+        <div id="qunit"></div>
+        <div id="qunit-fixture">
+            <table id="results"></table>
+        </div>
+        <script src="https://code.jquery.com/qunit/qunit-2.20.1.js"></script>
+        <script src="../script.js"></script>
+        <script>
+            QUnit.test('TC3.1/TC3.2 - Map data availability', function(assert) {
+                outputTable({ features: [{ attributes: { NAME: "CCTV", TYPE_DESCRIPTION: "Safety" } }] });
+                assert.ok(document.getElementById("results").innerHTML.includes("CCTV"), "Displays available facilities");
+                
+                outputTable({ features: null });
+                assert.ok(document.getElementById("results").innerHTML.includes("No results found"), "Handles null data safely");
+            });
+        </script>
+    </body>
+</html>

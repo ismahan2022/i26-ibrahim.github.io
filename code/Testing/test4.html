@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Test 4 - Review submission feedback</title>
+        <link rel="stylesheet" href="https://code.jquery.com/qunit/qunit-2.20.1.css">
+    </head>
+    <body>
+        <div id="qunit"></div>
+        <div id="qunit-fixture">
+            <div id="reviewFormBody">
+                <select id="locationSelect"><option value="Test">Test</option></select>
+                <textarea id="reviewText">Review</textarea>
+            </div>
+            <div id="successMessage" style="display:none;">Success</div>
+        </div>
+        <script src="https://code.jquery.com/qunit/qunit-2.20.1.js"></script>
+        <script src="../script.js"></script>
+        <script>
+            window.alert = function() {};
+            QUnit.test('TC4.1/TC4.2 - Review submission feedback', function(assert) {
+                document.getElementById("locationSelect").value = "Test";
+                document.getElementById("reviewText").value = "Valid";
+                submitReview();
+                
+                assert.equal(document.getElementById("reviewFormBody").style.display, "none", "Form hides on submit");
+                assert.equal(document.getElementById("successMessage").style.display, "block", "Success message appears");
+            });
+        </script>
+    </body>
+</html>

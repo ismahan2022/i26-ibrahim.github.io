@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Test 1 - Search results display</title>
+        <link rel="stylesheet" href="https://code.jquery.com/qunit/qunit-2.20.1.css">
+    </head>
+    <body>
+        <div id="qunit"></div>
+        <div id="qunit-fixture">
+            <table id="results"></table>
+        </div>
+        <script src="https://code.jquery.com/qunit/qunit-2.20.1.js"></script>
+        <script src="../script.js"></script>
+        <script>
+            QUnit.test('TC1.1/TC1.2: Search results display', function(assert) {
+                outputTable({ features: [{ attributes: { NAME: "Ducie", TYPE_DESCRIPTION: "On-Street" } }] });
+                let table = document.getElementById("results");
+                assert.equal(table.children.length, 1, "Displays matching results");
+                
+                outputTable({ features: [] });
+                assert.ok(table.innerHTML.includes("No results found"), "Handles empty search");
+            });
+        </script>
+    </body>
+</html>

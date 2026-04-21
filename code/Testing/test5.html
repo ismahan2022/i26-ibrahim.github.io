@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Test 5 - Safety data</title>
+        <link rel="stylesheet" href="https://code.jquery.com/qunit/qunit-2.20.1.css">
+    </head>
+    <body>
+        <div id="qunit"></div>
+        <div id="qunit-fixture">
+            <table id="results"></table>
+        </div>
+        <script src="https://code.jquery.com/qunit/qunit-2.20.1.js"></script>
+        <script src="../script.js"></script>
+        <script>
+            QUnit.test('TC5.1/TC5.2 - Safety data (CCTV)', function(assert) {
+                outputTable({ features: [{ attributes: { NAME: "Safe", TYPE_DESCRIPTION: "CCTV: YES" } }] });
+                assert.ok(document.getElementById("results").innerHTML.includes("CCTV: YES"), "Shows CCTV: YES");
+
+                outputTable({ features: [{ attributes: { NAME: "Unsafe", TYPE_DESCRIPTION: "CCTV: NO" } }] });
+                assert.ok(document.getElementById("results").innerHTML.includes("CCTV: NO"), "Shows CCTV: NO when missing");
+            });
+        </script>
+    </body>
+</html>
