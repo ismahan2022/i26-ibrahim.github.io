@@ -11,7 +11,9 @@ The implemented system is a Car Park Finder web application that retrieves parki
 
 This section outlines the project's folder structure and explains the purpose of each file.
 
-![Insert here](images/ProjectStructure.png)
+![Insert here](images/projectS1.png)
+
+![Insert here](images/PS2.png)
 
 
 ## Software Architecture
