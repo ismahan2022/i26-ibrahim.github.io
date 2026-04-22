@@ -3,7 +3,7 @@
 ## Test Plan
 
 
-The system was tested using a set of manual and automated test cases, each identified by a unique ID. For every test case, I defined the prerequisites, such as loading the app, having an internet connection, or providing search terms. Manual testing involved performing actions like typing a search term, clicking buttons, or selecting map markers, and then checking whether the app showed the correct results, such as matching car parks, CCTV information, or error messages. I also described how automated unit tests could be used to check the same behaviour in code, for example by calling the search function with test data and confirming that it returns the expected output. This combination of manual steps and simple automated checks ensures that all features work as intended.
+The system was tested using a set of manual and automated test cases where each identified by a unique ID. For every test case, I defined the prerequisites such as loading the app, having an internet connection or providing search terms. Manual testing involved performing actions like typing a search term, clicking buttons or selecting map markers and then checking whether the app showed the correct results such as matching car parks, CCTV information or error messages. I also described how automated unit tests could be used to check the same behaviour in code, for example by calling the search function with test data and confirming that it returns the expected output. This combination of manual steps and simple automated checks ensures that all features work as intended.
 
 ## Requirements Traceability Matrix
 
